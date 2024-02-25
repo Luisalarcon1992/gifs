@@ -1,0 +1,11 @@
+<section class="grid lg:grid-cols-4 md:grid-cols-3 gap-2">
+  <article *ngFor="let gif of gifs">
+    <div class="bg-black text-center border border-solid rounded mb-2">
+      <img [src]="gif.images.downsized_large.url" [alt]="gif.title">
+      <div>
+        <p class="text-white">{{gif.title}}</p>
+      </div>
+    </div>
+  </article>
+
+</section>
